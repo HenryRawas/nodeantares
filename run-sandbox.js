@@ -10,7 +10,7 @@ http.createServer(function (req, res) {
     
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     
-	var pid = cp.spawn(process.env['ProgramFiles(x86)'] + '\\Git\\bin\\git.exe', {detached:true});
+	var pid = cp.spawn(process.env['ProgramFiles(x86)'] + '\\Git\\bin\\git.exe', [], {detached:true});
 	
 	var stdout;
 	var stderr;
